@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFIGO - INFINITE SOLUTIONS</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS (CDN for multi-page static site) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7e22ce',
+                            800: '#6b21a8',
+                            900: '#581c87',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <img src="assets/images/INFIGO-LOGO.png" alt="INFIGO HOLDINGS Logo"
+                        class="h-12 w-auto object-contain rounded-lg shadow-sm">
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="nav-link active font-medium text-brand-700 hover:text-brand-500 transition-colors">Home</a>
+                    <a href="about.html"
+                        class="nav-link font-medium text-gray-600 hover:text-brand-600 transition-colors">About</a>
+                    <a href="services.html"
+                        class="nav-link font-medium text-gray-600 hover:text-brand-600 transition-colors">Services</a>
+                    <a href="contact.html"
+                        class="nav-link font-medium text-gray-600 hover:text-brand-600 transition-colors">Contact</a>
+                    <a href="contact.html"
+                        class="px-6 py-2.5 bg-gradient-to-r from-brand-600 to-brand-800 text-white rounded-full hover:shadow-lg hover:shadow-brand-500/30 transition-all transform hover:-translate-y-0.5 font-medium">Get
+                        a Quote</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-6 space-y-1 shadow-lg">
+                <a href="index.html" class="block px-3 py-2 text-brand-700 font-medium bg-brand-50 rounded-md">Home</a>
+                <a href="about.html"
+                    class="block px-3 py-2 text-gray-600 font-medium hover:bg-brand-50 hover:text-brand-600 rounded-md">About</a>
+                <a href="services.html"
+                    class="block px-3 py-2 text-gray-600 font-medium hover:bg-brand-50 hover:text-brand-600 rounded-md">Services</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 text-gray-600 font-medium hover:bg-brand-50 hover:text-brand-600 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 z-0 bg-brand-900 overflow-hidden">
+
+            <!-- Background Video -->
+            <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-40 mix-blend-overlay">
+                <source src="assets/images/Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-900/90 via-brand-900/70 to-transparent"></div>
+
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl animate-fade-in-up">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-brand-800/50 backdrop-blur-md border border-brand-500/30 text-brand-100 text-sm font-semibold tracking-wider mb-6">INFINITE
+                    SOLUTIONS</span>
+                <h2 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6"
+                    style="font-family: 'Times New Roman', Times, serif;">
+                    Redefining <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-white">Spaces,</span><br>
+                    Inspiring Lives.
+                </h2>
+                <p class="text-xl md:text-2xl text-brand-100 mb-10 font-light leading-relaxed">
+                    Modern, customized, and scalable furniture & interior design solutions for residential, commercial,
+                    and large-scale projects in Sri Lanka.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="services.html"
+                        class="px-8 py-4 bg-white text-brand-900 rounded-full font-semibold hover:bg-brand-50 transition-colors text-center shadow-[0_0_20px_rgba(255,255,255,0.3)]">Explore
+                        Our Services</a>
+                    <a href="contact.html"
+                        class="px-8 py-4 bg-transparent border-2 border-brand-300 text-white rounded-full font-semibold hover:bg-brand-800/50 hover:border-white transition-all text-center backdrop-blur-sm">Consult
+                        an Expert</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brief About Section -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-tr from-brand-100 to-brand-50 rounded-3xl transform -rotate-3 z-0">
+                    </div>
+                    <img src="assets/images/fdgfdgdfgdf.jpg" alt="Quality Craftsmanship"
+                        class="relative z-10 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-500 object-cover h-[500px] w-full">
+                    <!-- Experience Badge -->
+                    <div
+                        class="absolute -bottom-8 -right-8 bg-brand-700 text-white p-6 rounded-2xl shadow-xl z-20 hidden md:block animate-bounce-slow">
+                        <div class="text-4xl font-heading font-bold mb-1">2019</div>
+                        <div class="text-brand-200 text-sm font-medium">Established in<br>Sri Lanka</div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-brand-600 font-semibold tracking-wider uppercase mb-2">Who We Are</h3>
+                    <h2 class="text-4xl font-heading font-bold text-gray-900 mb-6">Crafting Excellence in Every Detail
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Infigo Holdings (Pvt) Ltd is a dynamic Sri Lankan furniture and interior design solutions
+                        provider headquartered in Colombo 02. We deliver modern, customized, and scalable solutions for
+                        residential, commercial, and large-scale development projects.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Since our inception in 2019, we have grown steadily by focusing on what matters most—quality
+                        craftsmanship, functional design, customer-centric solutions, and value for money.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600">
+                                <i class="fas fa-gem text-xl"></i>
+                            </div>
+                            <span class="font-medium text-gray-800">Quality Craftsmanship</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600">
+                                <i class="fas fa-pencil-ruler text-xl"></i>
+                            </div>
+                            <span class="font-medium text-gray-800">Functional Design</span>
+                        </div>
+                    </div>
+                    <a href="about.html"
+                        class="inline-flex items-center text-brand-600 font-semibold hover:text-brand-800 transition-colors group">
+                        Learn More About Us
+                        <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-100 mt-16">
+            <source src="assets/images/Video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="py-24 bg-gray-50 relative overflow-hidden">
+        <!-- Decor -->
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-brand-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-96 h-96 bg-brand-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h3 class="text-brand-600 font-semibold tracking-wider uppercase mb-2">Our Portfolio</h3>
+                <h2 class="text-4xl font-heading font-bold text-gray-900 mb-4">Comprehensive Aesthetic Solutions</h2>
+                <p class="text-gray-600 text-lg">From ergonomic office setups to luxurious residential interiors, we
+                    provide end-to-end design and manufacturing services.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/images/Office.jpg" alt="Office Furniture"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h4 class="absolute bottom-4 left-6 text-2xl font-heading font-bold text-white">Office Solutions
+                        </h4>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Ergonomic, flexible, and modular office systems designed to
+                            enhance productivity and comfort.</p>
+                        <a href="services.html"
+                            class="text-brand-600 font-medium hover:text-brand-800 flex items-center">Discover <i
+                                class="fas fa-chevron-right ml-1 text-sm"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/images/kitchen_pantry.png" alt="Kitchens & Pantries"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h4 class="absolute bottom-4 left-6 text-2xl font-heading font-bold text-white">Kitchens &
+                            Pantries</h4>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Modern concepts manufactured using advanced post-forming and
+                            German-standard materials.</p>
+                        <a href="services.html"
+                            class="text-brand-600 font-medium hover:text-brand-800 flex items-center">Discover <i
+                                class="fas fa-chevron-right ml-1 text-sm"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/images/gdfgdfg.jpg" alt="Custom Interior Design"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h4 class="absolute bottom-4 left-6 text-2xl font-heading font-bold text-white">Wardrobes and
+                            Closets
+
+                        </h4>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">A wide range of designs, finishes, and configurations—suitable for
+                            individual residences as well as large-scale housing projects.</p>
+                        <a href="services.html"
+                            class="text-brand-600 font-medium hover:text-brand-800 flex items-center">Discover <i
+                                class="fas fa-chevron-right ml-1 text-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="services.html"
+                    class="inline-flex items-center px-8 py-3 bg-brand-100 text-brand-700 rounded-full font-semibold hover:bg-brand-200 transition-colors">
+                    View Complete Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 relative bg-brand-900 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-700/50 rounded-full blur-3xl border opacity-50">
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Ready to Transform Your Space?</h2>
+            <p class="text-brand-100 text-xl mb-10 font-light">Let's collaborate to bring your vision to life with our
+                expertise and craftsmanship.</p>
+            <div class="flex justify-center gap-4">
+                <a href="contact.html"
+                    class="px-8 py-4 bg-white text-brand-900 rounded-full font-semibold hover:bg-brand-50 shadow-lg transition-all transform hover:-translate-y-1">Start
+                    a Project</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand Info -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="assets/images/INFIGO-LOGO 2.png" alt="INFIGO HOLDINGS Logo"
+                            class="h-12 w-auto object-contain rounded-lg shadow-sm">
+                    </div>
+
+
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">
+                        Leading Sri Lankan furniture and interior design solutions provider, delivering modern,
+                        customized, and scalable solutions for diverse projects.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-brand-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-brand-400 transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-brand-400 transition-colors">Our Services</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6">Our Expertise</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="services.html" class="hover:text-brand-400 transition-colors">Office Fit-Out
+                                Solutions</a></li>
+                        <li><a href="services.html" class="hover:text-brand-400 transition-colors">Custom Interior
+                                Design</a></li>
+                        <li><a href="services.html" class="hover:text-brand-400 transition-colors">Kitchens &
+                                Pantries</a></li>
+                        <li><a href="services.html" class="hover:text-brand-400 transition-colors">Bespoke Furniture</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6">Get in Touch</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-brand-500"></i>
+                            <span>No: 74 1/1, Orient Building, Union Place,<br>Colombo 02, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-brand-500"></i>
+                            <a href="mailto:info@infigoholdings.com"
+                                class="hover:text-brand-400 transition-colors">info@infigoholdings.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone-alt text-brand-500"></i>
+                            <div>
+                                <a href="tel:0779898985" class="block hover:text-brand-400 transition-colors">077 98 98
+                                    98 5</a>
+                                <a href="tel:0112314799" class="block hover:text-brand-400 transition-colors">011 2 314
+                                    799</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2026 INFIGO HOLDINGS (PRIVATE) LIMITED. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed & Developed as Requested</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+        <!-- Phone Floating Button -->
+        <a href="tel:+94779898985"
+            class="bg-brand-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-xl shadow-lg hover:bg-brand-700 transition-all duration-300 hover:scale-110 hover:shadow-2xl">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/94779898985" target="_blank"
+            class="bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-[#128C7E] transition-all duration-300 hover:scale-110 hover:shadow-2xl">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

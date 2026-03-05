@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - INFIGO HOLDINGS</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            100: '#f3e8ff', 200: '#e9d5ff', 300: '#d8b4fe', 400: '#c084fc',
+                            500: '#a855f7', 600: '#9333ea', 700: '#7e22ce', 800: '#6b21a8', 900: '#581c87',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50 antialiased selection:bg-brand-500 selection:text-white pt-24">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <img src="assets/images/INFIGO-LOGO.png" alt="INFIGO HOLDINGS Logo"
+                        class="h-12 w-auto object-contain rounded-lg shadow-sm">
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="nav-link font-medium text-gray-600 hover:text-brand-600 transition-colors">Home</a>
+                    <a href="about.html"
+                        class="nav-link font-medium text-gray-600 hover:text-brand-600 transition-colors">About</a>
+                    <a href="services.html"
+                        class="nav-link font-medium text-gray-600 hover:text-brand-600 transition-colors">Services</a>
+                    <a href="contact.html"
+                        class="nav-link active font-medium text-brand-700 hover:text-brand-500 transition-colors">Contact</a>
+                    <a href="contact.html"
+                        class="px-6 py-2.5 bg-gradient-to-r from-brand-600 to-brand-800 text-white rounded-full hover:shadow-lg transition-all transform hover:-translate-y-0.5 font-medium">Get
+                        a Quote</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-600 focus:outline-none"><i
+                            class="fas fa-bars text-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-6 space-y-1 shadow-lg">
+                <a href="index.html"
+                    class="block px-3 py-2 text-gray-600 font-medium hover:bg-brand-50 hover:text-brand-600 rounded-md">Home</a>
+                <a href="about.html"
+                    class="block px-3 py-2 text-gray-600 font-medium hover:bg-brand-50 hover:text-brand-600 rounded-md">About</a>
+                <a href="services.html"
+                    class="block px-3 py-2 text-gray-600 font-medium hover:bg-brand-50 hover:text-brand-600 rounded-md">Services</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 text-brand-700 font-medium bg-brand-50 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="relative bg-brand-900 py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0">
+            <!-- Background Video -->
+            <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-40 mix-blend-overlay">
+                <source src="assets/images/Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center animate-fade-in-up">
+            <span
+                class="inline-block py-1 px-3 rounded-full bg-brand-800 border border-brand-500 text-brand-100 text-sm font-semibold tracking-wider mb-4">GET
+                IN TOUCH</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6"
+                style="font-family: 'Times New Roman', Times, serif;">Contact Us</h1>
+            <p class="text-xl text-brand-100 max-w-2xl mx-auto font-light">We’re here to help you transform your space.
+                Reach out to us for consultations, inquiries, or project discussions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info & Form Section -->
+    <section class="py-24 bg-gray-50 relative -mt-16 z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row">
+
+                <!-- Contact Information -->
+                <div
+                    class="w-full lg:w-2/5 bg-gradient-to-br from-brand-800 to-brand-900 p-12 text-white relative overflow-hidden">
+                    <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-brand-600 rounded-full opacity-50 blur-3xl">
+                    </div>
+                    <div class="absolute -left-20 -top-20 w-48 h-48 bg-brand-500 rounded-full opacity-30 blur-2xl">
+                    </div>
+
+                    <div class="relative z-10">
+                        <h2 class="text-3xl font-heading font-bold mb-8">Contact Information</h2>
+
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-5 group">
+                                <div
+                                    class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-xl text-brand-300 group-hover:bg-brand-500 group-hover:text-white transition-all">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Our Location</h4>
+                                    <p class="text-brand-100">Infigo Holdings (Private) Limited<br>No: 74 1/1, Orient
+                                        Building, Union Place,<br>Colombo 02, Sri Lanka</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-5 group">
+                                <div
+                                    class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-xl text-brand-300 group-hover:bg-brand-500 group-hover:text-white transition-all">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Phone</h4>
+                                    <a href="tel:0779898985"
+                                        class="block text-brand-100 hover:text-white transition-colors">Hotline: 077 98
+                                        98 98 5</a>
+                                    <a href="tel:0112314799"
+                                        class="block text-brand-100 hover:text-white transition-colors">Tel: 011 2 314
+                                        799</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-5 group">
+                                <div
+                                    class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-xl text-brand-300 group-hover:bg-brand-500 group-hover:text-white transition-all">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Email</h4>
+                                    <a href="mailto:info@infigoholdings.com"
+                                        class="block text-brand-100 hover:text-white transition-colors">info@infigoholdings.com</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-5 group">
+                                <div
+                                    class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-xl text-brand-300 group-hover:bg-brand-500 group-hover:text-white transition-all">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Website</h4>
+                                    <a href="http://www.infigoholdings.com"
+                                        class="block text-brand-100 hover:text-white transition-colors">www.infigoholdings.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-16">
+                            <h4 class="font-semibold text-lg mb-4">Follow Us</h4>
+                            <div class="flex gap-4">
+                                <a href="#"
+                                    class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-brand-900 transition-all"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#"
+                                    class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-brand-900 transition-all"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#"
+                                    class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-brand-900 transition-all"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="w-full lg:w-3/5 p-12">
+                    <h2 class="text-3xl font-heading font-bold text-gray-900 mb-6">Send us a Message</h2>
+                    <p class="text-gray-600 mb-8">Fill out the form below and our team will get back to you within 24
+                        hours.</p>
+
+                    <form action="https://formsubmit.co/info@infigoholdings.com" method="POST" class="space-y-6">
+                        <!-- Custom Formsubmit Configurations -->
+                        <input type="hidden" name="_subject" value="New Website Inquiry!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first_name" class="block text-sm font-medium text-gray-700 mb-1">First
+                                    Name</label>
+                                <input type="text" id="first_name" name="First Name" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors outline-none"
+                                    placeholder="John">
+                            </div>
+                            <div>
+                                <label for="last_name" class="block text-sm font-medium text-gray-700 mb-1">Last
+                                    Name</label>
+                                <input type="text" id="last_name" name="Last Name" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors outline-none"
+                                    placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email
+                                    Address</label>
+                                <input type="email" id="email" name="Email" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors outline-none"
+                                    placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone
+                                    Number</label>
+                                <input type="tel" id="phone" name="Phone Number" required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors outline-none"
+                                    placeholder="077 123 4567">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Interested
+                                In</label>
+                            <select id="service" name="Interested Service"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors outline-none bg-white">
+                                <option value="Office Furniture & Fit-Out">Office Furniture & Fit-Out</option>
+                                <option value="Residential Interior Design">Residential Interior Design</option>
+                                <option value="Kitchens & Pantries">Kitchens & Pantries</option>
+                                <option value="Bespoke Furniture">Bespoke Furniture</option>
+                                <option value="Other Inquiry">Other Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="Message" rows="5" required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors outline-none resize-none"
+                                placeholder="How can we help you?"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full px-8 py-4 bg-brand-600 text-white rounded-lg font-semibold hover:bg-brand-700 transition-colors shadow-lg shadow-brand-500/30 flex justify-center items-center gap-2">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-96 w-full bg-gray-200 relative mb-[-40px]">
+        <!-- Embedded Google Map -->
+        <iframe
+            src="https://maps.google.com/maps?q=Infigo%20Holdings%20(Private)%20Limited,%20Orient%20Building,%20Colombo&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand Info -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="assets/images/INFIGO-LOGO 2.png" alt="INFIGO HOLDINGS Logo"
+                            class="h-12 w-auto object-contain rounded-lg shadow-sm">
+                    </div>
+
+
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">
+                        Leading Sri Lankan furniture and interior design solutions provider, delivering modern,
+                        customized, and scalable solutions for diverse projects.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-brand-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-brand-400 transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-brand-400 transition-colors">Our Services</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6">Our Expertise</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="services.html" class="hover:text-brand-400 transition-colors">Office Fit-Out
+                                Solutions</a></li>
+                        <li><a href="services.html" class="hover:text-brand-400 transition-colors">Custom Interior
+                                Design</a></li>
+                        <li><a href="services.html" class="hover:text-brand-400 transition-colors">Kitchens &
+                                Pantries</a></li>
+                        <li><a href="services.html" class="hover:text-brand-400 transition-colors">Bespoke Furniture</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-heading font-semibold mb-6">Get in Touch</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-brand-500"></i>
+                            <span>No: 74 1/1, Orient Building, Union Place,<br>Colombo 02, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-brand-500"></i>
+                            <a href="mailto:info@infigoholdings.com"
+                                class="hover:text-brand-400 transition-colors">info@infigoholdings.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone-alt text-brand-500"></i>
+                            <div>
+                                <a href="tel:0779898985" class="block hover:text-brand-400 transition-colors">077 98 98
+                                    98 5</a>
+                                <a href="tel:0112314799" class="block hover:text-brand-400 transition-colors">011 2 314
+                                    799</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2026 INFIGO HOLDINGS (PRIVATE) LIMITED. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Designed & Developed as Requested</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+        <!-- Phone Floating Button -->
+        <a href="tel:+94779898985"
+            class="bg-brand-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-xl shadow-lg hover:bg-brand-700 transition-all duration-300 hover:scale-110 hover:shadow-2xl">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/94779898985" target="_blank"
+            class="bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-[#128C7E] transition-all duration-300 hover:scale-110 hover:shadow-2xl">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
